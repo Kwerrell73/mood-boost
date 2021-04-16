@@ -2,6 +2,11 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1;
+   padding: 25px;
+  }
+
+  header {
+      text-align:center;
   }
   
   /* The Modal (background) */
