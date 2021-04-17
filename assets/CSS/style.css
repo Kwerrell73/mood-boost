@@ -11,6 +11,9 @@ body {
       border: blueviolet;
   }
 
+  header p {
+    color:#26a69a;
+  }
 
   /* The Modal (background) */
 .modal {
@@ -60,6 +63,10 @@ body {
     height: 125px;
     width: 125px;
     animation: pulse 4s cubic-bezier(0.5, 0, 0.5, 1) alternate infinite;
+  }
+  #breatheArea{
+justify-content: right;
+padding: 45px;
   }
   
   .circle {
