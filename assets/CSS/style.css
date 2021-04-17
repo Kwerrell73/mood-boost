@@ -12,7 +12,9 @@ body {
   }
 
   header p {
-    color:#26a69a;
+    color: rgb(245, 239, 239);
+    font-style: italic;
+    font-weight: bolder;
   }
 
   /* The Modal (background) */
