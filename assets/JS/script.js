@@ -1,25 +1,31 @@
-// Get the modal
-var modal = document.getElementById("myModal");
+  
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var natureBtn = document.getElementById('natureBtn');
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+window.addEventListener('fetch', function (event) {
+  console.log("fetch add event listener");
+});
 
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+natureBtn.addEventListener('click', function (event) {
+  fetch('https://api.giphy.com/v1/gifs/search?api_key=HvaacROi9w5oQCDYHSIk42eiDSIXH3FN&q=')
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (response) {
+      console.log(response.data[0]);
+      // Create a variable that will select the <div> where the GIF will be displayed
+      var responseContainerEl = document.querySelector('#response-container');
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+      // Empty out the <div> before we append a GIF to it
+      responseContainerEl.innerHTML = "";
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+      //
+      var gifImg = document.createElement('img');
+      gifImg.setAttribute('src', response.data[0]);
+      // Append 'gifImg' to the <div>
+      responseContainerEl.appendChild(gifImg);
+
+      //
+    });
+
+  });
