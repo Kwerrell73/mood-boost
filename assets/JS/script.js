@@ -28,3 +28,5 @@ natureBtn.addEventListener('click', function (event) {
     });
 
   });
+
+  
