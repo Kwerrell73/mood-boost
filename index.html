@@ -11,42 +11,16 @@
     <title>Mood Boost</title>
 </head>
 
+<br>
 <body>
     <header class="jumbotron">
-        <h1 class="headerText">Mood Boost</h1>
+        <h3 class="headerText">Mood Boost</h3>
         <p class="lead" id="subhead">A unique user experience customized to boost your mood.</p>
-        </br>
-        </br>
-        <p id="currentDay" class="lead"></p>
     </header>
-    <!-- Trigger/Open The Modal -->
-    <button id="myBtn" class="waves-effect waves-light btn-large">Click to customize your experience</button>
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
 
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Choose your Theme</p>
-            <button id="natureBtn">Nature</button>
-            <button id="sportsBtn">Sports</button>
-            <button id="animalBtn">Animals</button>
-            <button id="surpriseBtn">Surprise Me</button>
-        </div>
-    </div>
-    </br>
-    </br>
-    </br>
     <div class="row">
-        <div class="col s12 center-align">Test</div>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        <div class="col s8">8-columns</div>
-        <div class="col s4">Breathe in - Breath Out
+        <div class="col s8" id="breatheArea">Breathe in - Breath Out
             <br>
             <br>
             <br>
@@ -61,7 +35,26 @@
                 <div class="circle"></div>
             </div>
         </div>
+
     </div>
+
+    <div>
+        <p id="theme">Choose your Theme</p>
+        <button class="waves-effect waves-light btn-large" id="natureBtn">Nature</button>
+        <button class="waves-effect waves-light btn-large" id="sportsBtn">Sports</button>
+        <button class="waves-effect waves-light btn-large" id="animalBtn">Animals</button>
+        <button class="waves-effect waves-light btn-large" id="surpriseBtn">Surprise Me</button>
+    </div>
+
+    <div id="response-container"> </div>
+
+    <div class="test" id="response-container"> </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/JS/script.js"></script>
+
 
     <div class="player">
         <p>Get your mood 'recharged' with the invigorating sounds of thunder and rain as lightning strikes in a spring storm.</p>
