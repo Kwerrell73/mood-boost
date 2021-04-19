@@ -166,3 +166,11 @@ body {
       transform: translate(35px, -50px);
     }
   }
+
+   p {
+     font-style: italic;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+
+  
