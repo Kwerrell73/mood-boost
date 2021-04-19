@@ -41,6 +41,7 @@ natureBtn.addEventListener('click', function (event) {
         var responseContainerEl = document.querySelector('#response-container');
         // Create an '<img>' element
         var gifImg = document.createElement('img');
+     
         // Set that element's 'src' attribute to the 'image_url' from our Giphy API response
         gifImg.setAttribute('src', response.data.image_url);
         // Append the '<img>' element to the page

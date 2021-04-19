@@ -12,15 +12,37 @@
 </head>
 
 <br>
+
 <body>
-    <header class="jumbotron">
-        <h3 class="headerText">Mood Boost</h3>
+    <header>
+        <h3 class="headerText">
+            <a href="/">Mood Boost</a>
+        </h3>
+
         <p class="lead" id="subhead">A unique user experience customized to boost your mood.</p>
+
+        <nav>
+            <!-- Unordered list element -->
+            <ul>
+                <!-- List item element-->
+                <li>
+                    <!-- Anchor element -->
+                    <a href="#breatheArea">Breathe</a>
+                </li>
+                <li>
+                    <a href="#theme">Theme</a>
+                </li>
+                <li>
+                    <a href="#reach-out">Reach Out</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
 
+
     <div class="row">
-        <div class="col s8" id="breatheArea">Breathe in - Breath Out
+        <div class="col s4" id="breatheArea">Breathe in - Breath Out
             <br>
             <br>
             <br>
@@ -35,10 +57,10 @@
                 <div class="circle"></div>
             </div>
         </div>
-
+        <div class="col s8" id="response-container"> </div>
     </div>
 
-    <div>
+    <div class="theme">
         <p id="theme">Choose your Theme</p>
         <button class="waves-effect waves-light btn-large" id="natureBtn">Nature</button>
         <button class="waves-effect waves-light btn-large" id="sportsBtn">Sports</button>
@@ -46,12 +68,32 @@
         <button class="waves-effect waves-light btn-large" id="surpriseBtn">Surprise Me</button>
     </div>
 
-<<<<<<< HEAD
-    <div id="response-container"> </div>
-=======
-    <div class="test" id="response-container"> </div>
-    
->>>>>>> main
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <section id="contact" class="contact">
+
+        <h6 class="section-title secondary-border" id="reach-out">Contact Us:</h6>
+
+        <div class="contact-info">
+            <div>
+                <h7 class="contact-title">Mood Boost</h7>
+                <br />
+
+                <address class="address">
+                    55 Main Street <br />
+                    Some Town, Ca 12345<br />
+                    P: 555.786.2839)<br />
+                    E: email@moodboost.com<br />
+
+                </address>
+            </div>
+        </div>
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
