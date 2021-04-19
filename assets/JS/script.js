@@ -1,4 +1,4 @@
-  
+  // Create event Listeners for each button -Kellie W
 
 var natureBtn = document.getElementById('natureBtn');
 
