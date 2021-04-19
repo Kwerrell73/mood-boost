@@ -104,6 +104,7 @@ var stop = document.querySelector('.stop');
 play.addEventListener('click', playPauseMedia);
 
 function playPauseMedia() {
+  
     if(media.paused) {
       play.setAttribute('data-icon','u');
       media.play();
