@@ -9,6 +9,8 @@ body {
 header {
     text-align:center;
     border: blueviolet;
+    position:-webkit-sticky;
+    position: sticky;
 }
 
 header p {
@@ -17,7 +19,9 @@ header p {
   font-weight: bolder;
 }
 
-
+#response-container{
+  padding-top: 40px;
+}
 
 .breathe {
   background: #000;
