@@ -1,3 +1,4 @@
+  // Create event Listeners for each button -Kellie W
 
 var natureBtn = document.getElementById('natureBtn');
 
@@ -6,27 +7,89 @@ window.addEventListener('fetch', function (event) {
 });
 
 natureBtn.addEventListener('click', function (event) {
-  fetch('https://api.giphy.com/v1/gifs/search?api_key=HvaacROi9w5oQCDYHSIk42eiDSIXH3FN&q=')
+  fetch(
+    'https://api.giphy.com/v1/gifs/random?api_key=HvaacROi9w5oQCDYHSIk42eiDSIXH3FN&rating=g&tag=nature'
+  )
+    // Convert the response to JSON
     .then(function (response) {
       return response.json();
     })
     .then(function (response) {
-      console.log(response.data[0]);
-      // Create a variable that will select the <div> where the GIF will be displayed
+      // Use 'querySelector' to get the ID of where the GIF will be displayed
       var responseContainerEl = document.querySelector('#response-container');
-
-      // Empty out the <div> before we append a GIF to it
-      responseContainerEl.innerHTML = "";
-
-      //
+      // Create an '<img>' element
       var gifImg = document.createElement('img');
-      gifImg.setAttribute('src', response.data[0]);
-      // Append 'gifImg' to the <div>
+      // Set that element's 'src' attribute to the 'image_url' from our Giphy API response
+      gifImg.setAttribute('src', response.data.image_url);
+      // Append the '<img>' element to the page
       responseContainerEl.appendChild(gifImg);
-
-      //
     });
+   
 
   });
 
+  sportsBtn.addEventListener('click', function (event) {
+    fetch(
+      'https://api.giphy.com/v1/gifs/random?api_key=HvaacROi9w5oQCDYHSIk42eiDSIXH3FN&rating=g&tag=sports'
+    )
+      // Convert the response to JSON
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (response) {
+        // Use 'querySelector' to get the ID of where the GIF will be displayed
+        var responseContainerEl = document.querySelector('#response-container');
+        // Create an '<img>' element
+        var gifImg = document.createElement('img');
+        // Set that element's 'src' attribute to the 'image_url' from our Giphy API response
+        gifImg.setAttribute('src', response.data.image_url);
+        // Append the '<img>' element to the page
+        responseContainerEl.appendChild(gifImg);
+      });
+     
   
+    });
+
+    animalBtn.addEventListener('click', function (event) {
+      fetch(
+        'https://api.giphy.com/v1/gifs/random?api_key=HvaacROi9w5oQCDYHSIk42eiDSIXH3FN&rating=g&tag=baby animals'
+      )
+        // Convert the response to JSON
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (response) {
+          // Use 'querySelector' to get the ID of where the GIF will be displayed
+          var responseContainerEl = document.querySelector('#response-container');
+          // Create an '<img>' element
+          var gifImg = document.createElement('img');
+          // Set that element's 'src' attribute to the 'image_url' from our Giphy API response
+          gifImg.setAttribute('src', response.data.image_url);
+          // Append the '<img>' element to the page
+          responseContainerEl.appendChild(gifImg);
+        });
+       
+    
+      });
+
+      surpriseBtn.addEventListener('click', function (event) {
+        fetch(
+          'https://api.giphy.com/v1/gifs/random?api_key=HvaacROi9w5oQCDYHSIk42eiDSIXH3FN&rating=g&tag=laughing'
+        )
+          // Convert the response to JSON
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (response) {
+            // Use 'querySelector' to get the ID of where the GIF will be displayed
+            var responseContainerEl = document.querySelector('#response-container');
+            // Create an '<img>' element
+            var gifImg = document.createElement('img');
+            // Set that element's 'src' attribute to the 'image_url' from our Giphy API response
+            gifImg.setAttribute('src', response.data.image_url);
+            // Append the '<img>' element to the page
+            responseContainerEl.appendChild(gifImg);
+          });
+         
+      
+        });
