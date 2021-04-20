@@ -11,11 +11,10 @@
     <title>Mood Boost</title>
 </head>
 
-<br>
-
 <body>
     <header>
-        <h3 class="headerText">Mood Boost</h3>
+
+        <h5 class="headerText">Mood Boost</h5>
 
         <p class="lead" id="subhead">A unique user experience customized to boost your mood.</p>
 
@@ -25,7 +24,7 @@
                 <!-- List item element-->
                 <li>
                     <!-- Anchor element -->
-                    <a href="#breatheArea">Breathe</a>
+                    <a href="#myBtn">Breathe</a>
                 </li>
                 <li>
                     <a href="#listen">Listen</a>
@@ -38,41 +37,27 @@
                 </li>
             </ul>
         </nav>
+
     </header>
 
 
 
     <div class="row">
-        <div class="col s8" id="response-container"> </div>
-        <div class="col s4" id="breatheArea">Breathe in - Breath Out
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div class="breathe">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-            </div>
-        </div>
-  </div>
+        <div class="col s12" id="response-container"> </div>
+
+    </div>
+    <div class="theme">
+        <p id="theme">Choose your Theme</p>
+        <button class="waves-effect waves-light btn-large" id="natureBtn">Nature</button>
+        <button class="waves-effect waves-light btn-large" id="sportsBtn">Sports</button>
+        <button class="waves-effect waves-light btn-large" id="animalBtn">Animals</button>
+        <button class="waves-effect waves-light btn-large" id="surpriseBtn">Surprise Me</button>
+    </div>
 
 
-        <div class="theme">
-            <p id="theme">Choose your Theme</p>
-            <button class="waves-effect waves-light btn-large" id="natureBtn">Nature</button>
-            <button class="waves-effect waves-light btn-large" id="sportsBtn">Sports</button>
-            <button class="waves-effect waves-light btn-large" id="animalBtn">Animals</button>
-            <button class="waves-effect waves-light btn-large" id="surpriseBtn">Surprise Me</button>
-        </div>
-
-  
     <br>
     <br>
+
 
     <section id="listen">
         <div class="player" id="player">
@@ -86,7 +71,8 @@
             </video>
         </div>
         <div class="player" id="player">
-            <p>Cleanse and soothe your soul with the rhythm of a forest stream as it eternally flows over river stones.
+            <p>Cleanse and soothe your soul with the rhythm of a forest stream as it eternally flows over river
+                stones.
             </p>
             <video controls>
                 <source
@@ -102,10 +88,32 @@
                     type="video/webm">
             </video>
         </div>
-        </div>
+
     </section>
     <br>
     <br>
+
+<div class="breatheTitle">Click "Breathe" for a guided breathing animation.</div>
+<br>
+    <button class="blue waves-effect waves-light btn-large" id="myBtn">Breathe</button>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+
+        <div class="modal-content center-align" id="breatheArea"> Breathe in - Breath Out
+
+            <div id="breathe" class="modal-content center-align">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+       
+    </div>
+
+
     <br>
     <br>
     <br>
@@ -129,6 +137,8 @@
             </div>
         </div>
     </section>
+
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
