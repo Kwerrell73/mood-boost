@@ -1,3 +1,16 @@
+
+//Capture and return user name 
+
+var x = document.getElementById('textarea1').value;
+var y = "Hello"
+
+nameBtn.addEventListener('click', function (nameFunction) {
+   var x;
+          document.getElementById("textarea1").innerHTML = y + x;
+     });
+   
+
+
 // Create event Listeners for each theme button -Kellie W
 
 var natureBtn = document.getElementById('natureBtn');
