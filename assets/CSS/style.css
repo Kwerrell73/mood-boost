@@ -23,6 +23,15 @@ header p {
   font-weight: bolder;
 }
 
+.welcome{
+  font-size: 20px;
+  text-align: center;
+}
+
+.welcomesub{
+  color: #c22f8e;
+  text-align: center;
+}
 
 #response-container{
   padding-top: 40px;
