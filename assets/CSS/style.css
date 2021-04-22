@@ -88,6 +88,20 @@ address{
   font-size: 12px;
 }
 
+.wecare{
+  text-decoration: underline;
+}
+
+.prevention {
+  color: #2317be;
+  font-size: 20px;
+}
+
+.caretext {
+  color: #0c7c37;
+  text-decoration: bold;
+}
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -175,6 +189,7 @@ address{
 .circle:nth-child(6) {
   animation: circle-6 4s ease alternate infinite;
 }
+
 
 @keyframes pulse {
   0% {
