@@ -1,17 +1,27 @@
 
-//Capture and return user name 
+// Get user name and return on screen in message bar
 
-var x = document.getElementById('textarea1').value;
-var y = "Hello"
+// (B) MESSAGE BAR
+function mbar (msg, css) {
+  // (B1) CREATE BAR
+  var bar = document.createElement("div");
+  bar.innerHTML = msg;
+  bar.classList.add("mbar");
+  if (css) { bar.classList.add(css); }
 
-nameBtn.addEventListener('click', function (nameFunction) {
-   var x;
-          document.getElementById("textarea1").innerHTML = y + x;
-     });
+  // (B2) CLICK TO CLOSE
+  bar.onclick = function(){
+    document.getElementById("mbar").removeChild(this);
+  };
+ 
+  // (B3) APPEND TO CONTAINER
+  document.getElementById("mbar").appendChild(bar);
+}
+
+
    
 
-
-// Create event Listeners for each theme button -Kellie W
+// Create event Listeners for each button -Kellie W
 
 var natureBtn = document.getElementById('natureBtn');
 
@@ -66,7 +76,7 @@ sportsBtn.addEventListener('click', function (event) {
 
 animalBtn.addEventListener('click', function (event) {
   fetch(
-    'https://api.giphy.com/v1/gifs/random?api_key=HvaacROi9w5oQCDYHSIk42eiDSIXH3FN&rating=g&tag=baby animals'
+    'https://api.giphy.com/v1/gifs/random?api_key=HvaacROi9w5oQCDYHSIk42eiDSIXH3FN&rating=g&tag=animals'
   )
     // Convert the response to JSON
     .then(function (response) {
@@ -108,7 +118,6 @@ surpriseBtn.addEventListener('click', function (event) {
 
 });
 
-
 // get inspired event listener
 inspireBtn.addEventListener('click', function (event) {
 
@@ -117,22 +126,21 @@ inspireBtn.addEventListener('click', function (event) {
       return response.text();
     })
     .then(function (response) {
-
-
+ 
+    
       var responseContainerEl = document.querySelector('#inspiration-container');
       var t = document.createTextNode(response);
       var inspireData = document.createElement('h2');
       inspireData.appendChild(t);
-
+    
       document.getElementById("inspiration-container").appendChild(inspireData);
     });
 
-});
+    });
 
 
-// start of breathe modal - Kellie W
 
-// Get the modal 
+// Get the modal
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal

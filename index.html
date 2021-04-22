@@ -42,17 +42,25 @@
 
     <div class="row">
         <form class="col s6">
-          <div class="row">
-            <div class="input-field col s6">
-                <p class="welcome">Welcome to Mood Boost!</p>
-                <p class="welcomesub">Please enter your first name:</p>
-              <input id="textarea1" class="materialize-textarea"></input>
-              <button id="nameBtn">Submit</button>
-              <label for="textarea1"></label>
+            <div class="row">
+                <div class="input-field col s6">
+
+                    <p class="welcome">Please enter your first name:</p>
+                    <input id="textarea1" class="materialize-textarea"></input>
+                    <br>
+
+                    <button class="waves-effect waves-light" id="nameBtn" type="button"
+                        onclick="mbar('Welcome to Mood Boost ' + textarea1.value + '!')">Submit</button>
+                    <label for="textarea1"></label>
+
+                </div>
             </div>
-          </div>
         </form>
-      </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12" id="mbar"></div>
+    </div>
 
     <div class="row">
         <div class="col s12" id="response-container"> </div>
@@ -106,8 +114,6 @@
     <br>
     <br>
     <br>
-    <br>
-    <br>
     <div class="row">
         <div class="col s12" id="inspiration-container"> </div>
 
@@ -122,8 +128,8 @@
     <br>
     <br>
 
-<div class="breatheTitle">Click "Breathe" for a guided breathing animation.</div>
-<br>
+    <div class="breatheTitle">Click "Breathe" for a guided breathing animation.</div>
+    <br>
     <button class="blue waves-effect waves-light btn-large" id="myBtn">Breathe</button>
     <div id="myModal" class="modal">
         <span class="close">&times;</span>
@@ -139,7 +145,7 @@
                 <div class="circle"></div>
             </div>
         </div>
-       
+
     </div>
 
 
