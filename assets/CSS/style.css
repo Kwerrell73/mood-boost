@@ -9,36 +9,129 @@ body {
 header {
     text-align:center;
     border: blueviolet;
+    position:-webkit-sticky;
+    position: sticky;
+   
 }
 
 header p {
-  color: rgb(245, 239, 239);
+  color: rgb(110, 46, 150);
   font-style: italic;
+  
+}
+.headerText{
   font-weight: bolder;
+}
+h5 {
+  font-size: 48px;
+}
+.welcome{
+  font-size: 20px;
+  text-align: center;
+}
+
+.welcomesub{
+  color: #c22f8e;
+  text-align: center;
+}
+
+.mbar {
+  padding: 5px;
+  margin: 5px;
+  background: rgb(145, 205, 233);
+  border: 1px solid #aaa;
+  text-decoration: bold;
+  font-size: 25px;
+  text-align:center ;
+  color: #c22f8e;
+}
+.info {
+  background: #f1f6ff;
+  border: 1px solid #92aad4;
+}
+.err {
+  background: #ffe7f4;
+  border: 1px solid #813d3d;
+}
+
+#response-container{
+  padding-top: 40px;
+}
+
+#breathe {
+  background: #000;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  height: 125px;
+  width: 125px;
+  animation: pulse 4s cubic-bezier(0.5, 0, 0.5, 1) alternate infinite;
+ 
+}
+#breatheArea{
+justify-content: right;
+padding: 45px;
+color: white;
+}
+
+.secondary-border{
+  font-size: 16px;
+  text-decoration: underline;
+
+}
+
+.contact-title{
+font-size: 14px;
+color: teal;
+}
+
+address{
+  font-size: 12px;
+}
+
+.wecare{
+  text-decoration: underline;
+}
+
+.prevention {
+  color: #2317be;
+  font-size: 20px;
+}
+
+.caretext {
+  color: #0c7c37;
+  text-decoration: bold;
 }
 
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
-  position: absolute; /* Stay in place */
+  position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  left: 20;
+  top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  will-change: top;
+  max-height: 100%;
 }
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #60b6e7;
+  background-color: #4b1d3b;
   margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
+  padding: 40px; 
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
+  
+}
+
+.modal .modal-content{
+  align-items: center;
 }
 
 /* The Close Button */
@@ -56,20 +149,6 @@ header p {
   cursor: pointer;
 }
 
-.breathe {
-  background: #000;
-  display: flex;
-  align-items: center;
-  height: 100vh;
-  justify-content: center;
-  height: 125px;
-  width: 125px;
-  animation: pulse 4s cubic-bezier(0.5, 0, 0.5, 1) alternate infinite;
-}
-#breatheArea{
-justify-content: right;
-padding: 45px;
-}
 
 .circle {
   height: 125px;
@@ -112,6 +191,7 @@ padding: 45px;
 .circle:nth-child(6) {
   animation: circle-6 4s ease alternate infinite;
 }
+
 
 @keyframes pulse {
   0% {
@@ -175,10 +255,12 @@ padding: 45px;
     transform: translate(35px, -50px);
   }
 }
-   p {
-     font-style: italic;
-     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
-
-
-  
+p {
+  font-style: italic;
+}
+.inspire {
+  margin-bottom: 15px;
+}  
+.breath p {
+  margin-top: 15px;
+}

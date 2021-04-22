@@ -8,25 +8,119 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
     <link rel="stylesheet" href="./assets/CSS/style.css">
 
-    <title>Mood Boost- a relaxation app</title>
+    <title>Mood Boost</title>
 </head>
 
-<br>
 <body>
-    <header class="jumbotron">
-        <h3 class="headerText">Mood Boost</h3>
+    <header>
+
+        <h5 class="headerText">Mood Boost</h5> <img src="./assets/img/headimg.JPG" width="600px" height="200px">
+
         <p class="lead" id="subhead">A unique user experience customized to boost your mood.</p>
+
+        <nav>
+            <!-- Unordered list element -->
+            <ul>
+                <!-- List item element-->
+                <li>
+                    <!-- Anchor element -->
+                    <a href="#myBtn">Breathe</a>
+                </li>
+                <li>
+                    <a href="#listen">Listen</a>
+                </li>
+                <li>
+                    <a href="#theme">Themes</a>
+                </li>
+                <li>
+                    <a href="#inspire">Inspire Me</a>
+                </li>
+                <li>
+                    <a href="#we-care">We Care</a>
+                </li>
+                <li>
+                    <a href="#reach-out">Reach Out</a>
+                </li>
+
+            </ul>
+        </nav>
+
     </header>
 
+    <div class="row">
+        <form class="col s6">
+            <div class="row">
+                <div class="input-field col s6">
+
+                    <p class="welcome">Please enter your first name:</p>
+                    <input id="textarea1" class="materialize-textarea"></input>
+                    <br>
+
+                    <button class="waves-effect waves-light" id="nameBtn" type="button"
+                        onclick="mbar('Welcome to Mood Boost ' + textarea1.value + '!')">Submit</button>
+                    <label for="textarea1"></label>
+
+                </div>
+            </div>
+        </form>
+    </div>
 
     <div class="row">
-        <div class="col s8" id="breatheArea">Breathe in - Breath Out
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div class="breathe">
+        <div class="col s12" id="mbar"></div>
+    </div>
+
+    <div class="row">
+        <div class="col s12" id="response-container"> </div>
+
+    </div>
+    <div class="theme">
+        <p id="theme">Choose your theme, for a gif to appear</p>
+        <button class="waves-effect waves-light btn-large" id="natureBtn">Nature</button>
+        <button class="waves-effect waves-light btn-large" id="sportsBtn">Sports</button>
+        <button class="waves-effect waves-light btn-large" id="animalBtn">Animals</button>
+        <button class="waves-effect waves-light btn-large" id="surpriseBtn">Surprise Me</button>
+    </div>
+    <div>
+        <p>View these relaxing videos to facilitate your mood boost today.</p>
+    <iframe width="441" height="217" src="https://www.youtube.com/embed/gVKEM4K8J8A" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+    <iframe width="441" height="217" src="https://www.youtube.com/embed/tnV3TS55TpE" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <iframe width="441" height="217" src="https://www.youtube.com/embed/cisoMYJ0b6k" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <iframe width="441" height="217" src="https://www.youtube.com/embed/X7t--zPZdic" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <iframe width="441" height="217" src="https://www.youtube.com/embed/mA5THpy0zsg" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <iframe width="441" height="217" src="https://www.youtube.com/embed/0fYL_qiDYf0" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    </section>
+    <div class="row">
+        <div class="col s12" id="inspiration-container"> </div>
+
+    </div>
+    <br>
+    <div id="inspire">Click "Get Inspired" for inspirational quotes.</div>
+    <br>
+    <button class="purple waves-effect waves-light btn-large" id="inspireBtn">Get Inspired</button>
+
+    <div class="breatheTitle">Click "Breathe" for a guided breathing animation.</div>
+    <br>
+    <button class="blue waves-effect waves-light btn-large" id="myBtn">Breathe</button>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+
+        <div class="modal-content center-align" id="breatheArea"> Breathe in - Breath Out
+
+            <div id="breathe" class="modal-content center-align">
                 <div class="circle"></div>
                 <div class="circle"></div>
                 <div class="circle"></div>
@@ -37,42 +131,43 @@
         </div>
 
     </div>
-
-    <div>
-        <p id="theme">Choose your Theme</p>
-        <button class="waves-effect waves-light btn-large" id="natureBtn">Nature</button>
-        <button class="waves-effect waves-light btn-large" id="sportsBtn">Sports</button>
-        <button class="waves-effect waves-light btn-large" id="animalBtn">Animals</button>
-        <button class="waves-effect waves-light btn-large" id="surpriseBtn">Surprise Me</button>
-    </div>
-
-    <div id="response-container"> </div>
-
-    <div class="test" id="response-container"> </div>
-
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="./assets/JS/script.js"></script>
-
-
-    <div class="player">
-        <p>Get your mood 'recharged' with the invigorating sounds of thunder and rain as lightning strikes in a spring storm.</p>
-        <video controls>
-          <source src="https://stream1.vidoevo.com/api/yt/stream3.php?id=6sBqh_IA58Q&t=cfd9f4e67f5c4655931fe62296848213&ulk=US" type="video/mp4">
-        </video>
-        <div class="player">
-            <p>Cleanse and soothe your soul with the rhythm of a forest stream as it eternally flows over river stones.</p>
-            <video controls>
-                <source src="https://stream1.vidoevo.com/api/yt/stream3.php?id=NBGOlSFfLg4&t=71ebd45e0d6828e5d27f9ec7353383cd&ulk=US" type="video/webm">
-                </video>
-        <div class="player">
-            <p>Fly high with the liberated sounds of birds chirping to each other in this peaceful meadow.</p>
-            <video controls>
-                <source src="https://stream1.vidoevo.com/api/yt/stream3.php?id=2G8LAiHSCAs&t=47b08de2ded46bc5a9e7c88ce5aa69d6&ulk=US" type="video/webm">
-            </video>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section>
+        <div class="care" id="we-care">
+            <p class="wecare"> We Care: </p>
+            <p class="caretext"> Here at Mood Boost, we care about your well being! </p>
+            <p class="caretext"> Our mission is to make sure you never feel alone in your daily struggles. </p>
+            <p class="prevention">Suicide Prevention Hotline: 800-273-8255</p>
         </div>
-      </div>
+
+    </section>
+
+
+    <br>
+    <br>
+    <section id="reach-out" class="contact">
+
+        <h6 class="section-title secondary-border">Contact Us:</h6>
+
+        <div class="contact-info">
+            <div>
+                <h7 class="contact-title">Mood Boost</h7>
+                <br />
+
+                <address class="address">
+                    55 Main Street <br />
+                    Some Town, Ca 12345<br />
+                    P: 555.786.2839)<br />
+                    E: email@moodboost.com<br />
+
+                </address>
+            </div>
+        </div>
+    </section>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/JS/script.js"></script>
