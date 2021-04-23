@@ -40,6 +40,7 @@ header p {
   background-color: rgba(0,0,0,0);
   text-decoration: underline;
   font-weight: bold;
+
 }
 
 .welcome{
@@ -60,6 +61,14 @@ header p {
   color: #c22f8e;
 
 }
+
+.start-experience {
+text-align: center;
+
+
+
+}
+
 
 .theme1 {
 color: black;
