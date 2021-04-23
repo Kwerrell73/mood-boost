@@ -1,7 +1,7 @@
 ## Mood Boost
 
 ## Purpose
-To provider a customized 2.5 minute mood boost experience thru positive imagery, controlled breathing, and inspirational quotes.
+To provider a unique user experience customized to boost your mood..
 
 
 ## Built With
@@ -9,7 +9,7 @@ To provider a customized 2.5 minute mood boost experience thru positive imagery,
 * CSS
 * JavaScript
 * Materialize
-* Moment JS
+* Moment JS 
 * Jquery
 
 ## Website

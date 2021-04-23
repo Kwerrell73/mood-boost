@@ -23,6 +23,40 @@ header p {
   font-weight: bolder;
 }
 
+.welcome{
+  font-size: 20px;
+  text-align: center;
+}
+
+.welcomesub{
+  color: #c22f8e;
+  text-align: center;
+}
+
+.mbar {
+  padding: 5px;
+  margin: 5px;
+  background: rgb(145, 205, 233);
+  border: 1px solid #aaa;
+  text-decoration: bold;
+  font-size: 25px;
+  text-align:center ;
+  color: #c22f8e;
+}
+
+.theme1 {
+color: #c22f8e;
+}
+
+
+.info {
+  background: #f1f6ff;
+  border: 1px solid #92aad4;
+}
+.err {
+  background: #ffe7f4;
+  border: 1px solid #813d3d;
+}
 
 #response-container{
   padding-top: 40px;
@@ -58,6 +92,20 @@ color: teal;
 
 address{
   font-size: 12px;
+}
+
+.wecare{
+  text-decoration: underline;
+}
+
+.prevention {
+  color: #2317be;
+  font-size: 20px;
+}
+
+.caretext {
+  color: #0c7c37;
+  text-decoration: bold;
 }
 
 /* The Modal (background) */
@@ -147,6 +195,7 @@ address{
 .circle:nth-child(6) {
   animation: circle-6 4s ease alternate infinite;
 }
+
 
 @keyframes pulse {
   0% {
