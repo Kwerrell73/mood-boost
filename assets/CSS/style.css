@@ -8,20 +8,38 @@ body {
 
 header {
     text-align:center;
-    border: blueviolet;
-    position:-webkit-sticky;
-    position: sticky;
+    
+    background-image: url("../images/river.jpg");
+  
+      
+ 
+  top: 0;
+  
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
+  z-index: 9999;
 
    
 }
 
 header p {
-  color: rgb(110, 46, 150);
+  color:white;
   font-style: italic;
+  font-weight: bold;
+  font-size: large;
   
 }
 .headerText{
   font-weight: bolder;
+  padding-top: 10px;
+}
+
+.transBG {
+  background-color: rgba(0,0,0,0);
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .welcome{
