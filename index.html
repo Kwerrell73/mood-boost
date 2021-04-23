@@ -14,7 +14,7 @@
 <body>
     <header>
 
-        <h5 class="headerText">Mood Boost</h5> <img src="./assets/img/headimg.JPG" width="600px" height="200px">
+        <h5 class="headerText">Mood Boost</h5>
 
         <p class="lead" id="subhead">A unique user experience customized to boost your mood.</p>
 
@@ -27,7 +27,7 @@
                     <a href="#myBtn">Breathe</a>
                 </li>
                 <li>
-                    <a href="#listen">Listen</a>
+                    <a href="#view">View</a>
                 </li>
                 <li>
                     <a href="#theme">Themes</a>
@@ -41,7 +41,7 @@
                 <li>
                     <a href="#reach-out">Reach Out</a>
                 </li>
-
+               
             </ul>
         </nav>
 
@@ -55,13 +55,10 @@
                     <p class="welcome">Please enter your first name:</p>
                     <input id="textarea1" class="materialize-textarea"></input>
                     <br>
+
                     <button class="waves-effect waves-light" id="nameBtn" type="button"
                         onclick="mbar('Welcome to Mood Boost ' + textarea1.value + '!')">Submit</button>
                     <label for="textarea1"></label>
-                   
-                   
-    
-                    
 
                 </div>
             </div>
@@ -74,44 +71,49 @@
 
     <div class="row">
         <div class="col s12" id="response-container"> </div>
+        <br>
+
 
     </div>
     <div class="theme">
-        <p id="theme">Choose your theme, for a gif to appear</p>
+        <p id="theme" class="theme1">Choose your theme, for a gif to appear.</p>
+        <P class="theme1">Click multiple buttons to have a gif collage created.</P>
         <button class="waves-effect waves-light btn-large" id="natureBtn">Nature</button>
         <button class="waves-effect waves-light btn-large" id="sportsBtn">Sports</button>
         <button class="waves-effect waves-light btn-large" id="animalBtn">Animals</button>
         <button class="waves-effect waves-light btn-large" id="surpriseBtn">Surprise Me</button>
     </div>
-    <div>
-        <p>View these relaxing videos to facilitate your mood boost today.</p>
-        <iframe width="441" height="217" src="https://www.youtube.com/embed/gVKEM4K8J8A" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
 
-        <iframe width="441" height="217" src="https://www.youtube.com/embed/tnV3TS55TpE" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        <iframe width="441" height="217" src="https://www.youtube.com/embed/cisoMYJ0b6k" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        <iframe width="441" height="217" src="https://www.youtube.com/embed/X7t--zPZdic" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        <iframe width="441" height="217" src="https://www.youtube.com/embed/mA5THpy0zsg" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        <iframe width="441" height="217" src="https://www.youtube.com/embed/0fYL_qiDYf0" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+
+    <br>
+    <br>
+<section id="view">
+    <p>View these relaxing videos to facilitate your mood boost today.</p>
+    <iframe width="441" height="217" src="https://www.youtube.com/embed/gVKEM4K8J8A" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+    <iframe width="441" height="217" src="https://www.youtube.com/embed/tnV3TS55TpE" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <iframe width="441" height="217" src="https://www.youtube.com/embed/cisoMYJ0b6k" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <iframe width="441" height="217" src="https://www.youtube.com/embed/X7t--zPZdic" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <iframe width="441" height="217" src="https://www.youtube.com/embed/mA5THpy0zsg" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <iframe width="441" height="217" src="https://www.youtube.com/embed/0fYL_qiDYf0" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
     </div>
     </section>
+    <br>
+    <br>
+    <br>
+    <br>
     <div class="row">
         <div class="col s12" id="inspiration-container"> </div>
 
@@ -120,6 +122,11 @@
     <div id="inspire">Click "Get Inspired" for inspirational quotes.</div>
     <br>
     <button class="purple waves-effect waves-light btn-large" id="inspireBtn">Get Inspired</button>
+
+    <br>
+    <br>
+    <br>
+    <br>
 
     <div class="breatheTitle">Click "Breathe" for a guided breathing animation.</div>
     <br>
@@ -146,10 +153,10 @@
     <br>
     <section>
         <div class="care" id="we-care">
-            <p class="wecare"> We Care: </p>
-            <p class="caretext"> Here at Mood Boost, we care about your well being! </p>
-            <p class="caretext"> Our mission is to make sure you never feel alone in your daily struggles. </p>
-            <p class="prevention">Suicide Prevention Hotline: 800-273-8255</p>
+           <p class="wecare"> We Care: </p>
+           <p class="caretext"> Here at Mood Boost, we care about your well being! </p>
+           <p class="caretext"> Our mission is to make sure you never feel alone in your daily struggles. </p>
+            <p class="prevention">Suicide Prevention Hotline:  800-273-8255</p>
         </div>
 
     </section>
@@ -176,6 +183,9 @@
             </div>
         </div>
     </section>
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>

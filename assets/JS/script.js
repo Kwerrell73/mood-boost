@@ -1,4 +1,5 @@
-  // Get user name and return on screen in message bar
+
+// Get user name and return on screen in message bar
 
 // (B) MESSAGE BAR
 function mbar (msg, css) {
@@ -18,6 +19,13 @@ function mbar (msg, css) {
 }
 
 
+// local storage for name
+var nameBtn = document.getElementById("nameBtn");
+nameBtn.addEventListener("click", function (){
+  var input = document.getElementById("textarea1").value;
+  localStorage.setItem("name", input);
+ 
+})
    
 
 // Create event Listeners for each button -Kellie W
@@ -122,13 +130,18 @@ inspireBtn.addEventListener('click', function (event) {
 
   fetch('https://type.fit/api/quotes')
     .then(function (response) {
-      return response.text();
+      return response.json();
     })
     .then(function (response) {
  
     
       var responseContainerEl = document.querySelector('#inspiration-container');
-      var t = document.createTextNode(response);
+
+      //write code to clear response
+    responseContainerEl.innerHTML = ""
+
+      //use math.floor/random to select random quotes set to length of response
+      var t = document.createTextNode(response[Math.floor(Math.random() * 1000) + 1].text);
       var inspireData = document.createElement('h2');
       inspireData.appendChild(t);
     
@@ -164,5 +177,31 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 }
-  
+
+//start of js for media player, vmcguire
+var media = document.querySelector('video');
+var play = document.querySelector('.play');
+var stop = document.querySelector('.stop');
+
+play.addEventListener('click', playPauseMedia);
+
+function playPauseMedia() {
+
+  if (media.paused) {
+    play.setAttribute('data-icon', 'u');
+    media.play();
+  } else {
+    play.setAttribute('data-icon', 'P');
+    media.pause();
+  }
+}
+
+stop.addEventListener('click', stopMedia);
+media.addEventListener('ended', stopMedia);
+
+function stopMedia() {
+  media.pause();
+  media.currentTime = 0;
+  play.setAttribute('data-icon', 'P');
+}
 
