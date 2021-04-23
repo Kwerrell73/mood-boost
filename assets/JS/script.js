@@ -19,6 +19,13 @@ function mbar (msg, css) {
 }
 
 
+// local storage for name
+var nameBtn = document.getElementById("nameBtn");
+nameBtn.addEventListener("click", function (){
+  var input = document.getElementById("textarea1").value;
+  localStorage.setItem("name", input);
+ 
+})
    
 
 // Create event Listeners for each button -Kellie W
@@ -123,13 +130,18 @@ inspireBtn.addEventListener('click', function (event) {
 
   fetch('https://type.fit/api/quotes')
     .then(function (response) {
-      return response.text();
+      return response.json();
     })
     .then(function (response) {
  
     
       var responseContainerEl = document.querySelector('#inspiration-container');
-      var t = document.createTextNode(response);
+
+      //write code to clear response
+    responseContainerEl.innerHTML = ""
+
+      //use math.floor/random to select random quotes set to length of response
+      var t = document.createTextNode(response[Math.floor(Math.random() * 1000) + 1].text);
       var inspireData = document.createElement('h2');
       inspireData.appendChild(t);
     
