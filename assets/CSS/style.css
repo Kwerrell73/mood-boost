@@ -5,7 +5,19 @@ body {
  padding: 25px;
  background-color: rgba(73, 88, 175, 0.4);
 }
-
+body.colorBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background: #fff;
+  border: none;
+  outline: none;
+  font-size:  18px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
 header {
     text-align:center;
     border: blueviolet;
@@ -258,9 +270,4 @@ address{
 p {
   font-style: italic;
 }
-.inspire {
-  margin-bottom: 15px;
-}  
-.breath p {
-  margin-top: 15px;
-}
+
