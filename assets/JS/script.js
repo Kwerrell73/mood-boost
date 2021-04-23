@@ -142,7 +142,7 @@ inspireBtn.addEventListener('click', function (event) {
 
       //use math.floor/random to select random quotes set to length of response
       var t = document.createTextNode(response[Math.floor(Math.random() * 1000) + 1].text);
-      var inspireData = document.createElement('h2');
+      var inspireData = document.createElement('h4');
       inspireData.appendChild(t);
     
       document.getElementById("inspiration-container").appendChild(inspireData);
