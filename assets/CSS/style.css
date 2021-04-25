@@ -3,7 +3,7 @@ body {
   font-size: 16px;
   line-height: 1;
  padding: 25px;
- background-color: rgba(73, 88, 175, 0.4);
+ background: linear-gradient(100DEG, rgba(73, 88, 175, 0.4), rgba(73, 88, 175, 0.4), rgb(248, 178, 221), rgb(190, 250, 232),rgba(73, 88, 175, 0.4),   teal);
 }
 
 header {
