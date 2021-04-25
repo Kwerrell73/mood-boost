@@ -72,12 +72,13 @@ font-weight: bold;
 }
 
 .memory {
-  font-size: 20px;
-  color: yellow;
-  border:  5px solid rgb(88, 9, 104);
+  font-size: 25px;
+  color: rgb(72, 53, 247);
+  border:  3px solid rgb(88, 9, 104);
   border-radius: 5px;
 padding-inline: 10px;
 text-decoration: bold;
+background-color: rgb(173, 231, 233)
 }
 
 .video {
