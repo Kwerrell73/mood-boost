@@ -67,6 +67,19 @@ font-size: 20px;
 font-weight: bold;
 }
 
+.themeheader {
+  text-decoration: underline;
+}
+
+.memory {
+  font-size: 20px;
+  color: yellow;
+  border:  5px solid rgb(88, 9, 104);
+  border-radius: 5px;
+padding-inline: 10px;
+text-decoration: bold;
+}
+
 .video {
   color: black;
   font-size: 20px;
