@@ -21,7 +21,7 @@ To provider a unique user experience customized to boost your mood..
 ![](./assets/images/screenshots/moodboosttwo.png)
 
 ## Contribution
-Created by Vanessa McGuire, Umed Ulmasov, and  Kellie Werrell :smile:
+Created by Vanessa McGuire, and  Kellie Werrell :smile:
 
 ### ©️2021 Mood Boost
 

@@ -34,6 +34,7 @@ header p {
 .headerText{
   font-weight: bolder;
   padding-top: 10px;
+  font-size: 60px;
 }
 
 .transBG {
@@ -74,8 +75,35 @@ font-weight: bold;
   }
 
 .themeheader {
-  text-decoration: underline;
+text-align: center;
+color: rgb(88, 9, 104);
 }
+
+.videoheader {
+  text-align: center;
+  color: rgb(88, 9, 104);
+  }
+
+ .inspireheader {
+    text-align: center;
+    color: rgb(88, 9, 104);
+}
+
+ .breatheheader {
+   text-align: center;
+   color: rgb(88, 9, 104);
+}   
+  
+.wecareheader {
+  text-align: center;
+  color: rgb(88, 9, 104);
+}        
+
+.reachoutheader {
+  text-align: center;
+  color: rgb(88, 9, 104);
+           }  
+
 
 #natureBtn{
   position: relative;
@@ -131,8 +159,7 @@ color: #640d46;
   border: 3px solid blue;
   border-radius: 5px;
   background-color: rgb(173, 231, 233);
-  
-
+ 
 }
 
 #news {

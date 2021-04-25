@@ -151,25 +151,25 @@ inspireBtn.addEventListener('click', function (event) {
     });
 
 
-    newsBtn.addEventListener('click', function (event) {
-      fetch(
-        'https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=339f4c7a8857479985e37f549d8a0063'
-      )
+   // newsBtn.addEventListener('click', function (event) {
+   //   fetch(
+   //     'https://newsapi.org/v2/everything?q=goodnews?sources=techcrunch&apiKey=339f4c7a8857479985e37f549d8a0063'
+   //   )
         // Convert the response to JSON
-        .then(function (response) {
-          return response.json();
-        })
-        .then(function (response) {
+   //     .then(function (response) {
+     //     return response.json();
+       // })
+    //    .then(function (response) {
           // Use 'querySelector' to get the ID of where the GIF will be displayed
-          var responseContainerEl = document.querySelector('#news-container');
-          responseContainerEl.innerHTML = ""
-          var n = document.createTextNode(response.text);
-         var newsData = document.createElement('h2');
-         newsData.appendChild(n);
-          document.getElementById("news-container").appendChild(newsData);
+      //    var responseContainerEl = document.querySelector('#news-container');
+      //    responseContainerEl.innerHTML = ""
+     //     var n = document.createTextNode(response.text);
+     //    var newsData = document.createElement('h2');
+     //    newsData.appendChild(n);
+     //     document.getElementById("news-container").appendChild(newsData);
           
-        });
-      });
+   //     });
+  //    });
 
 
 // Get the modal
