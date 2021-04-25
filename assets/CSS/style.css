@@ -71,6 +71,27 @@ font-weight: bold;
   text-decoration: underline;
 }
 
+#natureBtn{
+  position: relative;
+
+}
+
+#sportsBtn{
+  position: relative;
+
+}
+
+#animalBtn{
+  position: relative;
+
+}
+
+#surpriseBtn{
+  position: relative;
+
+}
+  
+
 .memory {
   font-size: 25px;
   color: rgb(72, 53, 247);
