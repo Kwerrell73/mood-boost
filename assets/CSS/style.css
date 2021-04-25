@@ -67,6 +67,12 @@ font-size: 20px;
 font-weight: bold;
 }
 
+.theme2 {
+  color: blue;
+  font-size: 20px;
+  font-weight: bold;
+  }
+
 .themeheader {
   text-decoration: underline;
 }
@@ -99,7 +105,8 @@ font-weight: bold;
   border-radius: 5px;
 padding-inline: 10px;
 text-decoration: bold;
-background-color: rgb(173, 231, 233)
+background-color: rgb(173, 231, 233);
+flex-wrap: wrap;
 }
 
 .video {
