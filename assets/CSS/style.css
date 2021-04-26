@@ -76,6 +76,30 @@ header p {
   border-bottom-style:groove;
 }
 
+.themeheader{
+  text-shadow: 2px 2px 0px #eee;
+}
+
+.videoheader{
+  text-shadow: 2px 2px 0px #eee;
+}
+
+.inspireheader{
+  text-shadow: 2px 2px 0px #eee;
+}
+
+.breatheheader{
+  text-shadow: 2px 2px 0px #eee;
+}
+
+.wecareheader{
+  text-shadow: 2px 2px 0px #eee;
+}
+
+.reachoutheader{
+  text-shadow: 2px 2px 0px #eee;
+}
+
 #inspire-me {
   border-width:5px;  
   border-bottom-style:groove;
