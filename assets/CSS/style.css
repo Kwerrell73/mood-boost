@@ -26,6 +26,7 @@ header p {
   font-style: italic;
   font-weight: bold;
   font-size: large;
+  padding-bottom: 9px;
   
 }
 
@@ -50,14 +51,15 @@ header p {
 
 
 .mbar {
-  padding: 5px;
-  margin: 5px;
-  background: rgb(145, 205, 233);
-  border: 1px solid #aaa;
+  padding: 25px 0 25px 0;
+  margin: 15px;
+  background: rgb(127, 207, 245);
+  border: 1px solid purple;
   font-size: 25px;
   font-weight: bold;
   text-align:center ;
   color: #c22f8e;
+  border-radius: 6px;
 
 }
 

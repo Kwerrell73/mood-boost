@@ -198,30 +198,4 @@ window.onclick = function (event) {
   }
 }
 
-//start of js for media player, vmcguire
-var media = document.querySelector('video');
-var play = document.querySelector('.play');
-var stop = document.querySelector('.stop');
-
-play.addEventListener('click', playPauseMedia);
-
-function playPauseMedia() {
-
-  if (media.paused) {
-    play.setAttribute('data-icon', 'u');
-    media.play();
-  } else {
-    play.setAttribute('data-icon', 'P');
-    media.pause();
-  }
-}
-
-stop.addEventListener('click', stopMedia);
-media.addEventListener('ended', stopMedia);
-
-function stopMedia() {
-  media.pause();
-  media.currentTime = 0;
-  play.setAttribute('data-icon', 'P');
-}
 
