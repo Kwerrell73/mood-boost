@@ -107,31 +107,37 @@ font-weight: bold;
 .themeheader {
 text-align: center;
 color: rgb(88, 9, 104);
+text-shadow: 2px 2px 0px #eee;
 }
 
 .videoheader {
   text-align: center;
   color: rgb(88, 9, 104);
+  text-shadow: 2px 2px 0px #eee;
   }
 
  .inspireheader {
     text-align: center;
     color: rgb(88, 9, 104);
+    text-shadow: 2px 2px 0px #eee;
 }
 
  .breatheheader {
    text-align: center;
    color: rgb(88, 9, 104);
+   text-shadow: 2px 2px 0px #eee;
 }   
   
 .wecareheader {
   text-align: center;
   color: rgb(88, 9, 104);
+  text-shadow: 2px 2px 0px #eee;
 }        
 
 .reachoutheader {
   text-align: center;
   color: rgb(88, 9, 104);
+  text-shadow: 2px 2px 0px #eee;
            }  
 
 
