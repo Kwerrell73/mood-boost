@@ -26,7 +26,6 @@ header p {
   font-style: italic;
   font-weight: bold;
   font-size: large;
-  padding-bottom: 9px;
   
 }
 
@@ -51,15 +50,14 @@ header p {
 
 
 .mbar {
-  padding: 25px 0 25px 0;
-  margin: 15px;
-  background: rgb(127, 207, 245);
-  border: 1px solid purple;
+  padding: 5px;
+  margin: 5px;
+  background: rgb(145, 205, 233);
+  border: 1px solid #aaa;
   font-size: 25px;
   font-weight: bold;
   text-align:center ;
   color: #c22f8e;
-  border-radius: 6px;
 
 }
 
@@ -76,30 +74,6 @@ header p {
 #theme {
   border-width:5px;  
   border-bottom-style:groove;
-}
-
-.themeheader{
-  text-shadow: 2px 2px 0px #eee;
-}
-
-.videoheader{
-  text-shadow: 2px 2px 0px #eee;
-}
-
-.inspireheader{
-  text-shadow: 2px 2px 0px #eee;
-}
-
-.breatheheader{
-  text-shadow: 2px 2px 0px #eee;
-}
-
-.wecareheader{
-  text-shadow: 2px 2px 0px #eee;
-}
-
-.reachoutheader{
-  text-shadow: 2px 2px 0px #eee;
 }
 
 #inspire-me {
@@ -127,6 +101,7 @@ font-weight: bold;
   color: blue;
   font-size: 20px;
   font-weight: bold;
+  margin-left: 45px;
   }
 
 .themeheader {
@@ -278,17 +253,6 @@ color: teal;
 
 address{
   font-size: 14px;
-}
-
-.reach-out-company-name{
-  font-size: 18px;
-  padding-bottom: 5px;
-}
-
-.reach-out-email{
-  color: #2317be;
-  text-decoration: underline;
-
 }
 
 .wecare{
