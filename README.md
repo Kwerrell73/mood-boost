@@ -9,7 +9,6 @@ To provider a unique user experience customized to boost your mood..
 * CSS
 * JavaScript
 * Materialize
-* Moment JS 
 * Jquery
 
 ## Website
