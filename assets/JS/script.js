@@ -18,7 +18,6 @@ function mbar (msg, css) {
   document.getElementById("mbar").appendChild(bar);
 }
 
-
 // local storage for name
 var nameBtn = document.getElementById("nameBtn");
 nameBtn.addEventListener("click", function (){
@@ -26,7 +25,6 @@ nameBtn.addEventListener("click", function (){
   localStorage.setItem("name", input);
  
 })
-   
 
 // Create event Listeners for each button -Kellie W
 
