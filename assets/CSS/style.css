@@ -3,51 +3,211 @@ body {
   font-size: 16px;
   line-height: 1;
  padding: 25px;
- background-color: rgba(73, 88, 175, 0.4);
+ background: linear-gradient(100DEG, rgba(73, 88, 175, 0.4), rgba(73, 88, 175, 0.4), rgb(248, 178, 221), rgb(190, 250, 232),rgba(73, 88, 175, 0.4),   teal);
 }
 
 header {
-    text-align:center;
-    border: blueviolet;
-    position:-webkit-sticky;
-    position: sticky;
-   
+  text-align:center;    
+  background-image: url("../images/river.jpg");
+  border-style: groove;
+  border-width: 7px;
+  border-radius: 6px;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
+  z-index: 9999;
+  
 }
 
 header p {
-  color: rgb(110, 46, 150);
+  color:white;
   font-style: italic;
+  font-weight: bold;
+  font-size: large;
   
 }
+
 .headerText{
   font-weight: bolder;
+  padding-top: 10px;
+  font-size: 60px;
+  text-shadow: 2px 2px 0px #eee, 4px 4px 0px #707070;
+}
+
+.transBG {
+  background-color: rgba(0,0,0,0);
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .welcome{
   font-size: 20px;
-  text-align: center;
+  text-align: left;
+  font-weight: bold;
 }
 
-.welcomesub{
-  color: #c22f8e;
-  text-align: center;
-}
 
 .mbar {
   padding: 5px;
   margin: 5px;
   background: rgb(145, 205, 233);
   border: 1px solid #aaa;
-  text-decoration: bold;
   font-size: 25px;
+  font-weight: bold;
   text-align:center ;
   color: #c22f8e;
+
+}
+
+#view {
+  border-width:5px;  
+  border-bottom-style:groove;
+}
+
+#welcome {
+  border-width:5px;  
+  border-bottom-style:groove;
+}
+
+#theme {
+  border-width:5px;  
+  border-bottom-style:groove;
+}
+
+#inspire-me {
+  border-width:5px;  
+  border-bottom-style:groove;
+}
+
+#breathesection {
+  border-width:5px;  
+  border-bottom-style:groove;
+}
+
+#we-care {
+  border-width:5px;  
+  border-bottom-style:groove;
 }
 
 .theme1 {
-color: #c22f8e;
+color: black;
+font-size: 20px;
+font-weight: bold;
 }
 
+.theme2 {
+  color: blue;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 45px;
+  }
+
+.themeheader {
+text-align: center;
+color: rgb(88, 9, 104);
+text-shadow: 2px 2px 0px #eee;
+}
+
+.videoheader {
+  text-align: center;
+  color: rgb(88, 9, 104);
+  text-shadow: 2px 2px 0px #eee;
+  }
+
+ .inspireheader {
+    text-align: center;
+    color: rgb(88, 9, 104);
+    text-shadow: 2px 2px 0px #eee;
+}
+
+ .breatheheader {
+   text-align: center;
+   color: rgb(88, 9, 104);
+   text-shadow: 2px 2px 0px #eee;
+}   
+  
+.wecareheader {
+  text-align: center;
+  color: rgb(88, 9, 104);
+  text-shadow: 2px 2px 0px #eee;
+}        
+
+.reachoutheader {
+  text-align: center;
+  color: rgb(88, 9, 104);
+  text-shadow: 2px 2px 0px #eee;
+           }  
+
+
+#natureBtn{
+  position: relative;
+
+}
+
+#sportsBtn{
+  position: relative;
+
+}
+
+#animalBtn{
+  position: relative;
+
+}
+
+#surpriseBtn{
+  position: relative;
+
+}
+  
+
+.memory {
+  font-size: 25px;
+  color: rgb(72, 53, 247);
+  border:  3px solid rgb(88, 9, 104);
+  border-radius: 5px;
+padding-inline: 10px;
+text-decoration: bold;
+background-color: rgb(173, 231, 233);
+flex-wrap: wrap;
+}
+
+.video {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  }
+
+
+#inspire {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.inspire2 {
+font-size: 12px;
+color: #640d46;
+}
+
+#inspiration-container{
+  border: 1px solid blue;
+  border-radius: 5px;
+  background-color: rgb(173, 231, 233);
+text-align: center;
+
+
+
+
+ 
+}
+
+#news {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
 
 .info {
   background: #f1f6ff;
@@ -59,7 +219,8 @@ color: #c22f8e;
 }
 
 #response-container{
-  padding-top: 40px;
+  padding: 40px;
+
 }
 
 #breathe {
@@ -79,6 +240,12 @@ padding: 45px;
 color: white;
 }
 
+.breatheTitle {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .secondary-border{
   font-size: 16px;
   text-decoration: underline;
@@ -91,7 +258,7 @@ color: teal;
 }
 
 address{
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .wecare{

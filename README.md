@@ -9,19 +9,18 @@ To provider a unique user experience customized to boost your mood..
 * CSS
 * JavaScript
 * Materialize
-* Moment JS 
 * Jquery
 
 ## Website
  https://kwerrell73.github.io/mood-boost/
 
 ## Screenshots
-![](./assets/images/screenshots/moodboost.png)
+![](./assets/images/screenshots/moodboost2.png)
 
-![](./assets/images/screenshots/moodboosttwo.png)
+
 
 ## Contribution
-Created by Vanessa McGuire, Umed Ulmasov, and  Kellie Werrell :smile:
+Created by Vanessa McGuire, and  Kellie Werrell :smile:
 
 ### ©️2021 Mood Boost
 

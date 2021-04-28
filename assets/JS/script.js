@@ -18,7 +18,6 @@ function mbar (msg, css) {
   document.getElementById("mbar").appendChild(bar);
 }
 
-
 // local storage for name
 var nameBtn = document.getElementById("nameBtn");
 nameBtn.addEventListener("click", function (){
@@ -26,7 +25,6 @@ nameBtn.addEventListener("click", function (){
   localStorage.setItem("name", input);
  
 })
-   
 
 // Create event Listeners for each button -Kellie W
 
@@ -142,7 +140,7 @@ inspireBtn.addEventListener('click', function (event) {
 
       //use math.floor/random to select random quotes set to length of response
       var t = document.createTextNode(response[Math.floor(Math.random() * 1000) + 1].text);
-      var inspireData = document.createElement('h2');
+      var inspireData = document.createElement('h4');
       inspireData.appendChild(t);
     
       document.getElementById("inspiration-container").appendChild(inspireData);
@@ -150,6 +148,26 @@ inspireBtn.addEventListener('click', function (event) {
 
     });
 
+
+   // newsBtn.addEventListener('click', function (event) {
+   //   fetch(
+   //     'https://newsapi.org/v2/everything?q=goodnews?sources=techcrunch&apiKey=339f4c7a8857479985e37f549d8a0063'
+   //   )
+        // Convert the response to JSON
+   //     .then(function (response) {
+     //     return response.json();
+       // })
+    //    .then(function (response) {
+          // Use 'querySelector' to get the ID of where the GIF will be displayed
+      //    var responseContainerEl = document.querySelector('#news-container');
+      //    responseContainerEl.innerHTML = ""
+     //     var n = document.createTextNode(response.text);
+     //    var newsData = document.createElement('h2');
+     //    newsData.appendChild(n);
+     //     document.getElementById("news-container").appendChild(newsData);
+          
+   //     });
+  //    });
 
 
 // Get the modal
@@ -178,30 +196,4 @@ window.onclick = function (event) {
   }
 }
 
-//start of js for media player, vmcguire
-var media = document.querySelector('video');
-var play = document.querySelector('.play');
-var stop = document.querySelector('.stop');
-
-play.addEventListener('click', playPauseMedia);
-
-function playPauseMedia() {
-
-  if (media.paused) {
-    play.setAttribute('data-icon', 'u');
-    media.play();
-  } else {
-    play.setAttribute('data-icon', 'P');
-    media.pause();
-  }
-}
-
-stop.addEventListener('click', stopMedia);
-media.addEventListener('ended', stopMedia);
-
-function stopMedia() {
-  media.pause();
-  media.currentTime = 0;
-  play.setAttribute('data-icon', 'P');
-}
 
