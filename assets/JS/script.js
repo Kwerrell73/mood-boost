@@ -18,7 +18,6 @@ function mbar (msg, css) {
   document.getElementById("mbar").appendChild(bar);
 }
 
-
 // local storage for name
 var nameBtn = document.getElementById("nameBtn");
 nameBtn.addEventListener("click", function (){
@@ -26,7 +25,6 @@ nameBtn.addEventListener("click", function (){
   localStorage.setItem("name", input);
  
 })
-   
 
 // Create event Listeners for each button -Kellie W
 
@@ -150,49 +148,6 @@ inspireBtn.addEventListener('click', function (event) {
 
     });
 
-<<<<<<< HEAD
-    newsBtn.addEventListener('click', function (event) {
-      fetch(
-        'https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=339f4c7a8857479985e37f549d8a0063'
-      )
-        // Convert the response to JSON
-        .then(function (response) {
-          return response.json();
-        })
-        .then(function (response) {
-          // Use 'querySelector' to get the ID of where the GIF will be displayed
-          var responseContainerEl = document.querySelector('#news-container');
-          responseContainerEl.innerHTML = ""
-          var n = document.createTextNode(response.text);
-         var newsData = document.createElement('h2');
-         newsData.appendChild(n);
-          document.getElementById("news-container").appendChild(newsData);
-          
-        });
-      });
-=======
-
-   // newsBtn.addEventListener('click', function (event) {
-   //   fetch(
-   //     'https://newsapi.org/v2/everything?q=goodnews?sources=techcrunch&apiKey=339f4c7a8857479985e37f549d8a0063'
-   //   )
-        // Convert the response to JSON
-   //     .then(function (response) {
-     //     return response.json();
-       // })
-    //    .then(function (response) {
-          // Use 'querySelector' to get the ID of where the GIF will be displayed
-      //    var responseContainerEl = document.querySelector('#news-container');
-      //    responseContainerEl.innerHTML = ""
-     //     var n = document.createTextNode(response.text);
-     //    var newsData = document.createElement('h2');
-     //    newsData.appendChild(n);
-     //     document.getElementById("news-container").appendChild(newsData);
-          
-   //     });
-  //    });
-
->>>>>>> b01ceb44048b6ce530976356fc0776c48686bbda
 
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -220,6 +175,6 @@ window.onclick = function (event) {
   }
 }
 
-
+       
 
 

@@ -41,6 +41,7 @@ header p {
   text-decoration: underline;
   font-weight: bold;
 }
+
 .welcome{
   font-size: 20px;
   text-align: left;
@@ -75,31 +76,12 @@ header p {
   border-bottom-style:groove;
 }
 
-.themeheader{
-  text-shadow: 2px 2px 0px #eee;
-}
-
-.videoheader{
-  text-shadow: 2px 2px 0px #eee;
-}
-
-.inspireheader{
-  text-shadow: 2px 2px 0px #eee;
-}
-
-.breatheheader{
-  text-shadow: 2px 2px 0px #eee;
-}
-
-.wecareheader{
-  text-shadow: 2px 2px 0px #eee;
-}
-
-.reachoutheader{
-  text-shadow: 2px 2px 0px #eee;
-}
-
 #inspire-me {
+  border-width:5px;  
+  border-bottom-style:groove;
+}
+
+#yogasection {
   border-width:5px;  
   border-bottom-style:groove;
 }
@@ -124,36 +106,43 @@ font-weight: bold;
   color: blue;
   font-size: 20px;
   font-weight: bold;
+  margin-left: 45px;
   }
 
 .themeheader {
 text-align: center;
 color: rgb(88, 9, 104);
+text-shadow: 2px 2px 0px #eee;
 }
 
 .videoheader {
   text-align: center;
   color: rgb(88, 9, 104);
+  text-shadow: 2px 2px 0px #eee;
   }
 
  .inspireheader {
     text-align: center;
     color: rgb(88, 9, 104);
+    text-shadow: 2px 2px 0px #eee;
 }
 
  .breatheheader {
    text-align: center;
    color: rgb(88, 9, 104);
+   text-shadow: 2px 2px 0px #eee;
 }   
   
 .wecareheader {
   text-align: center;
   color: rgb(88, 9, 104);
+  text-shadow: 2px 2px 0px #eee;
 }        
 
 .reachoutheader {
   text-align: center;
   color: rgb(88, 9, 104);
+  text-shadow: 2px 2px 0px #eee;
            }  
 
 
@@ -275,17 +264,6 @@ color: teal;
 
 address{
   font-size: 14px;
-}
-
-.reach-out-company-name{
-  font-size: 18px;
-  padding-bottom: 5px;
-}
-
-.reach-out-email{
-  color: #2317be;
-  text-decoration: underline;
-
 }
 
 .wecare{
@@ -453,3 +431,5 @@ address{
     transform: translate(35px, -50px);
   }
 }
+
+
