@@ -82,13 +82,15 @@ header p {
 }
 
 #breathesection {
-  border-width:5px;  
-  border-bottom-style:groove;
+
+  background: linear-gradient(100DEG, teal, rgb(248, 178, 221), rgb(190, 250, 232),rgba(73, 88, 175, 0.4),   teal);
 }
 
 #we-care {
   border-width:5px;  
   border-bottom-style:groove;
+  border-width:5px;  
+  border-top-style:groove;
 }
 
 .theme1 {
@@ -192,9 +194,7 @@ color: #640d46;
 }
 
 #inspiration-container{
-  border: 1px solid blue;
-  border-radius: 5px;
-  background-color: rgb(173, 231, 233);
+background-color: rgb(173, 231, 233);
 text-align: center;
 
 
