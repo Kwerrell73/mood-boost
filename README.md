@@ -27,7 +27,6 @@ https://type.fit/api/quotes
 
 ## Screenshots
 ![](./assets/images/screenshots/moodboost2.png)
-![](./assets/images/screenshots/playsection.png)
 ![](./assets/images/screenshots/memorygame.png)
 ![](./assets/images/screenshots/relaxsection.png)
 ![](./assets/images/screenshots/inspiresection.png)
